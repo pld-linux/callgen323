@@ -1,0 +1,11 @@
+--- pstngw/Makefile~	Sat Jul 13 10:14:32 2002
++++ pstngw/Makefile	Sat Jul 13 10:15:13 2002
+@@ -59,7 +59,7 @@
+ OPENH323DIR=$(HOME)/openh323
+ endif
+ 
+-include $(OPENH323DIR)/openh323u.mak
++include $(OPENH323DIR)/share/misc/openh323u.mak
+ 
+ 
+ ifdef NOTRACE
