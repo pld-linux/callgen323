@@ -1,0 +1,10 @@
+--- callgen323/precompile.h.orig	2002-01-24 01:48:17.000000000 +0100
++++ callgen323/precompile.h	2005-03-27 18:45:33.582648632 +0200
+@@ -4,7 +4,6 @@
+ #include "h323.h"
+ #include "h245.h"
+ #include "h225.h"
+-#include "gsmcodec.h"
+ 
+ //#ifdef WIN32
+ //#include "acmcodec.h"
