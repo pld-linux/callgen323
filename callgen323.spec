@@ -11,6 +11,7 @@ Patch0:		%{name}-mak_files.patch
 URL:		http://www.openh323.org/
 BuildRequires:	openh323-devel >= 1.13.4-3
 BuildRequires:	pwlib-devel >= 1.6.5-3
+BuildRequires:	speex-devel
 %requires_eq	openh323
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
