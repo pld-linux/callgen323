@@ -2,7 +2,7 @@ Summary:	H.323 call generator
 Summary(pl):	Generator po³±czeñ H.323
 Name:		callgen323
 Version:	1.2.6
-Release:	4
+Release:	5
 License:	MPL 1.0
 Group:		Networking/Daemons
 Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
@@ -20,15 +20,17 @@ What you can do with this call generator:
  - receiving an exact number of calls.
  - adjust the delay between each batch of calls.
  - set the number of batches to repeat.
- - The only capability supported is G.711 ULaw 64k and user indication.
+ - The only capability supported is G.711 ULaw 64k and user
+   indication.
 
 %description -l pl
 Co mo¿esz robiæ tym generatorem po³±czeñ:
- - utworzyæ dowoln± ilo¶æ po³±czeñ.
- - odebraæ dowoln± ilo¶æ po³±czeñ.
+ - utworzyæ dowoln± liczbê po³±czeñ.
+ - odebraæ dowoln± liczbê po³±czeñ.
  - ustawiæ opó¼nienie miêdzy dowoln± parti± po³±czeñ.
- - ustawiæ ilo¶æ partii po³±czeñ do powtórzenia.
- - Jedyn± dostêpn± mo¿liwo¶ci± jest G.711 ULaw 64k oraz wskazania u¿ytkownika.
+ - ustawiæ liczbê partii po³±czeñ do powtórzenia.
+ - Jedyn± dostêpn± mo¿liwo¶ci± jest G.711 ULaw 64k oraz wskazania
+   u¿ytkownika.
 
 %prep
 %setup -qn %{name}
@@ -36,6 +38,8 @@ Co mo¿esz robiæ tym generatorem po³±czeñ:
 
 %build
 %{__make} %{?debug:debug}%{!?debug:opt}shared \
+	PW_LIBDIR=%{_libdir} \
+	OH323_LIBDIR=%{_libdir} \
 	OPTCCFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 
 %install
