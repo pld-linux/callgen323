@@ -9,8 +9,8 @@ Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
 # Source0-md5:	1428f738e3ad43e5c57aa99e132065dc
 Patch0:		%{name}-mak_files.patch
 URL:		http://www.openh323.org/
-BuildRequires:	openh323-devel >= 1.12.0
-BuildRequires:	pwlib-devel >= 1.4.8
+BuildRequires:	openh323-devel >= 1.13.4-3
+BuildRequires:	pwlib-devel >= 1.6.5-3
 %requires_eq	openh323
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,8 +38,6 @@ Co mo¿esz robiæ tym generatorem po³±czeñ:
 
 %build
 %{__make} %{?debug:debug}%{!?debug:opt}shared \
-	PW_LIBDIR=%{_libdir} \
-	OH323_LIBDIR=%{_libdir} \
 	OPTCCFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
 
 %install
