@@ -16,21 +16,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 What you can do with this call generator:
- - spawning an exact number of calls.
- - receiving an exact number of calls.
- - adjust the delay between each batch of calls.
- - set the number of batches to repeat.
- - The only capability supported is G.711 ULaw 64k and user
-   indication.
+- spawning an exact number of calls.
+- receiving an exact number of calls.
+- adjust the delay between each batch of calls.
+- set the number of batches to repeat.
+- The only capability supported is G.711 ULaw 64k and user
+  indication.
 
 %description -l pl
 Co mo¿esz robiæ tym generatorem po³±czeñ:
- - utworzyæ dowoln± liczbê po³±czeñ.
- - odebraæ dowoln± liczbê po³±czeñ.
- - ustawiæ opó¼nienie miêdzy dowoln± parti± po³±czeñ.
- - ustawiæ liczbê partii po³±czeñ do powtórzenia.
- - Jedyn± dostêpn± mo¿liwo¶ci± jest G.711 ULaw 64k oraz wskazania
-   u¿ytkownika.
+- utworzyæ dowoln± liczbê po³±czeñ.
+- odebraæ dowoln± liczbê po³±czeñ.
+- ustawiæ opó¼nienie miêdzy dowoln± parti± po³±czeñ.
+- ustawiæ liczbê partii po³±czeñ do powtórzenia.
+- Jedyn± dostêpn± mo¿liwo¶ci± jest G.711 ULaw 64k oraz wskazania
+  u¿ytkownika.
 
 %prep
 %setup -qn %{name}
