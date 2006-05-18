@@ -2,14 +2,15 @@ Summary:	H.323 call generator
 Summary(pl):	Generator po³±czeñ H.323
 Name:		callgen323
 Version:	1.2.6
-Release:	6
+Release:	9
 License:	MPL 1.0
 Group:		Networking/Daemons
 Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
 # Source0-md5:	1428f738e3ad43e5c57aa99e132065dc
 Patch0:		%{name}-mak_files.patch
+Patch1:		%{name}-update.patch
 URL:		http://www.openh323.org/
-BuildRequires:	openh323-devel >= 1.13.4-3
+BuildRequires:	openh323-devel >= 1.18.0
 BuildRequires:	pwlib-devel >= 1.6.5-3
 BuildRequires:	speex-devel
 %requires_eq	openh323
@@ -36,10 +37,12 @@ Co mo¿esz robiæ tym generatorem po³±czeñ:
 %prep
 %setup -qn %{name}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__make} %{?debug:debug}%{!?debug:opt}shared \
-	OPTCCFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions"
+	CXX="%{__cxx}" \
+	OPTCCFLAGS="%{rpmcflags} -fno-exceptions"
 
 %install
 rm -rf $RPM_BUILD_ROOT
