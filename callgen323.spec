@@ -2,7 +2,7 @@ Summary:	H.323 call generator
 Summary(pl):	Generator po³±czeñ H.323
 Name:		callgen323
 Version:	1.2.6
-Release:	10
+Release:	11
 License:	MPL 1.0
 Group:		Networking/Daemons
 Source0:	http://www.openh323.org/bin/%{name}_%{version}.tar.gz
