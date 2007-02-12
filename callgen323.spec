@@ -1,5 +1,5 @@
 Summary:	H.323 call generator
-Summary(pl):	Generator po³±czeñ H.323
+Summary(pl.UTF-8):   Generator poÅ‚Ä…czeÅ„ H.323
 Name:		callgen323
 Version:	1.2.6
 Release:	11
@@ -25,14 +25,14 @@ What you can do with this call generator:
 - The only capability supported is G.711 ULaw 64k and user
   indication.
 
-%description -l pl
-Co mo¿esz robiæ tym generatorem po³±czeñ:
-- utworzyæ dowoln± liczbê po³±czeñ.
-- odebraæ dowoln± liczbê po³±czeñ.
-- ustawiæ opó¼nienie miêdzy dowoln± parti± po³±czeñ.
-- ustawiæ liczbê partii po³±czeñ do powtórzenia.
-- Jedyn± dostêpn± mo¿liwo¶ci± jest G.711 ULaw 64k oraz wskazania
-  u¿ytkownika.
+%description -l pl.UTF-8
+Co moÅ¼esz robiÄ‡ tym generatorem poÅ‚Ä…czeÅ„:
+- utworzyÄ‡ dowolnÄ… liczbÄ™ poÅ‚Ä…czeÅ„.
+- odebraÄ‡ dowolnÄ… liczbÄ™ poÅ‚Ä…czeÅ„.
+- ustawiÄ‡ opÃ³Åºnienie miÄ™dzy dowolnÄ… partiÄ… poÅ‚Ä…czeÅ„.
+- ustawiÄ‡ liczbÄ™ partii poÅ‚Ä…czeÅ„ do powtÃ³rzenia.
+- JedynÄ… dostÄ™pnÄ… moÅ¼liwoÅ›ciÄ… jest G.711 ULaw 64k oraz wskazania
+  uÅ¼ytkownika.
 
 %prep
 %setup -qn %{name}
