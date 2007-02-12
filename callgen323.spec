@@ -1,5 +1,5 @@
 Summary:	H.323 call generator
-Summary(pl.UTF-8):   Generator połączeń H.323
+Summary(pl.UTF-8):	Generator połączeń H.323
 Name:		callgen323
 Version:	1.2.6
 Release:	11
